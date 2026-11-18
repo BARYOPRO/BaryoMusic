@@ -4,7 +4,7 @@ Baryo Music is a local-first Android music player for the songs already stored o
 
 **Website:** [Baryo Music](https://baryopro.github.io/BaryoMusic/) · [English page](https://baryopro.github.io/BaryoMusic/en/)
 
-## Latest stable release: 1.7.0
+## Latest stable release: 1.7.1
 
 This stability hotfix focuses on freezes, ANRs and memory pressure reported on some Android devices.
 
@@ -20,7 +20,7 @@ This stability hotfix focuses on freezes, ANRs and memory pressure reported on s
 
 ## APK downloads
 
-Download the six signed install choices from the [v1.7.0 Stability Hotfix release](https://github.com/BARYOPRO/BaryoMusic/releases/tag/v1.7.0):
+Download the six signed install choices from the [v1.7.1 Stability Hotfix release](https://github.com/BARYOPRO/BaryoMusic/releases/tag/v1.7.1):
 
 - `arm64-v8a` — recommended for most newer Android phones
 - `armeabi-v7a` — older 32-bit ARM devices
@@ -43,3 +43,8 @@ This public repository contains the bilingual landing page, website styling, art
 
 - Email: [Ehsanfarzian2025@outlook.com](mailto:Ehsanfarzian2025@outlook.com)
 - Telegram: [@OWLHAPPY](https://t.me/OWLHAPPY)
+
+
+### 1.7.1 Reliability hardening
+
+The latest hotfix hardens updater memory use, MediaStore compatibility, playback resumption privacy, PCM float safety, playlist concurrency and Favorites/History writes.
