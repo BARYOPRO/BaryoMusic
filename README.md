@@ -4,7 +4,7 @@ Baryo Music is a local-first Android music player for the songs already stored o
 
 **Website:** [Baryo Music](https://baryopro.github.io/BaryoMusic/) · [English page](https://baryopro.github.io/BaryoMusic/en/)
 
-## Latest stable release: 1.6.0
+## Latest stable release: 1.7.0
 
 This stability hotfix focuses on freezes, ANRs and memory pressure reported on some Android devices.
 
@@ -16,11 +16,11 @@ This stability hotfix focuses on freezes, ANRs and memory pressure reported on s
 - Artwork extraction is size-limited, concurrency-limited and written atomically.
 - Lyrics reads are bounded and duplicate playlist additions are safe.
 - The Home carousel includes Smart Performance and ClearSound as polished fifth and sixth slides.
-- ClearSound provides Natural, Balanced and Night peak-protection modes.
+- ClearSound provides Natural, Balanced and Night modes with K-weighted short-term LUFS normalization, an adjustable -18 to -8 LUFS target, and true-peak safety.
 
 ## APK downloads
 
-Download the six signed install choices from the [v1.6.0 Stability Hotfix release](https://github.com/BARYOPRO/BaryoMusic/releases/tag/v1.6.0):
+Download the six signed install choices from the [v1.7.0 Stability Hotfix release](https://github.com/BARYOPRO/BaryoMusic/releases/tag/v1.7.0):
 
 - `arm64-v8a` — recommended for most newer Android phones
 - `armeabi-v7a` — older 32-bit ARM devices
