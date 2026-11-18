@@ -4,7 +4,7 @@ Baryo Music is a local-first Android music player for the songs already stored o
 
 **Website:** [Baryo Music](https://baryopro.github.io/BaryoMusic/) · [English page](https://baryopro.github.io/BaryoMusic/en/)
 
-## Latest stable release: 1.7.1
+## Latest stable release: 1.6.9
 
 This stability hotfix focuses on freezes, ANRs and memory pressure reported on some Android devices.
 
@@ -16,11 +16,11 @@ This stability hotfix focuses on freezes, ANRs and memory pressure reported on s
 - Artwork extraction is size-limited, concurrency-limited and written atomically.
 - Lyrics reads are bounded and duplicate playlist additions are safe.
 - The Home carousel includes Smart Performance and ClearSound as polished fifth and sixth slides.
-- ClearSound provides Natural, Balanced and Night modes with K-weighted short-term LUFS normalization, an adjustable -18 to -8 LUFS target, and true-peak safety.
+- ClearSound provides Natural, Balanced and Night modes with K-weighted short-term stable peak protection normalization, an adjustable -18 to -8 stable peak protection target, and true-peak safety.
 
 ## APK downloads
 
-Download the six signed install choices from the [v1.7.1 Stability Hotfix release](https://github.com/BARYOPRO/BaryoMusic/releases/tag/v1.7.1):
+Download the six signed install choices from the [v1.6.9 Stability Hotfix release](https://github.com/BARYOPRO/BaryoMusic/releases/tag/v1.6.9):
 
 - `arm64-v8a` — recommended for most newer Android phones
 - `armeabi-v7a` — older 32-bit ARM devices
@@ -45,6 +45,6 @@ This public repository contains the bilingual landing page, website styling, art
 - Telegram: [@OWLHAPPY](https://t.me/OWLHAPPY)
 
 
-### 1.7.1 Reliability hardening
+### 1.6.9 Reliability hardening
 
 The latest hotfix hardens updater memory use, MediaStore compatibility, playback resumption privacy, PCM float safety, playlist concurrency and Favorites/History writes.
