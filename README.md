@@ -1,28 +1,34 @@
 # Baryo Music
 
-Baryo Music is a local-first Android music player for the songs already stored on your device, with a library, playback, playlist and audio tools.
+Baryo Music is a local-first Android music player for the songs already stored on your device, with library, playback, playlist, audio clarity and Smart Performance tools.
 
 **Website:** [Baryo Music](https://baryopro.github.io/BaryoMusic/) · [English page](https://baryopro.github.io/BaryoMusic/en/)
 
-## Version 1.0.6
+## Latest stable release: 1.5.3
 
-- **Crossfade:** optional track overlap, disabled by default.
-- **Automatic online lyrics:** optional LRCLIB lookups, disabled by default; local lyrics take priority.
-- **Bass Boost and equalizer:** advanced playback controls in Settings, subject to device support.
-- **Library browsing:** fewer unnecessary library updates during playback progress changes.
-- **Playback fix:** resolves a PCM buffer aliasing case that could interrupt Mono playback.
+This stability hotfix focuses on freezes, ANRs and memory pressure reported on some Android devices.
+
+- Large playback queues are prepared off the UI thread and safely bounded.
+- The visible queue uses a bounded window so very large libraries do not trigger repeated allocations.
+- MediaStore refresh orchestration is kept off the UI dispatcher.
+- Smart Performance Auto mode checks memory pressure and Android Battery Saver while playing.
+- Crossfade failures are isolated so a device-specific decoder or audio-effect problem is not retried continuously.
+- Artwork extraction is size-limited, concurrency-limited and written atomically.
+- Lyrics reads are bounded and duplicate playlist additions are safe.
+- The Home carousel includes Smart Performance as a polished fifth slide.
 
 ## APK downloads
 
-Download the five signed install choices from the [v1.0.6 release](https://github.com/BARYOPRO/BaryoMusic/releases/tag/v1.0.6):
+Download the six signed install choices from the [v1.5.3 Stability Hotfix release](https://github.com/BARYOPRO/BaryoMusic/releases/tag/v1.5.3):
 
 - `arm64-v8a` — recommended for most newer Android phones
 - `armeabi-v7a` — older 32-bit ARM devices
 - `x86_64` — 64-bit x86 devices and emulators
 - `x86` — 32-bit x86 devices and emulators
-- Universal — includes all four listed ABIs
+- `riscv64` — RISC-V Android devices where supported
+- Universal — includes the supported ABI payloads
 
-These direct-install APKs are signed with the same Android Debug certificate as v1.0.5 so existing installations can update in place. This is not a Google Play production signing key. Keep the previous app installed when upgrading.
+These direct-install APKs are signed with the same Baryo Music certificate used for previous releases so existing installations can update in place. This is not a Google Play production signing key. Keep the previous app installed when upgrading.
 
 ## Privacy
 
@@ -30,9 +36,9 @@ The local music library and playback history stay on the device. Automatic onlin
 
 ## About this repository
 
-This public repository contains the bilingual landing page, website styling, artwork and preview images, plus GitHub release assets for installing the app. It does **not** contain Android Kotlin/Gradle source files, app build credentials or the private source archive.
+This public repository contains the bilingual landing page, website styling, artwork and preview images, plus GitHub release assets for installing the app. It does **not** contain Android Kotlin/Gradle source files, app build credentials, keystores or the private source archive.
 
 ## Contact
 
 - Email: [Ehsanfarzian2025@outlook.com](mailto:Ehsanfarzian2025@outlook.com)
-- Telegram: [@OwlHapp](https://t.me/OwlHapp)
+- Telegram: [@OWLHAPPY](https://t.me/OWLHAPPY)
